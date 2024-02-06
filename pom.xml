@@ -19,13 +19,8 @@
         <dependency>
             <groupId>jakarta.platform</groupId>
             <artifactId>jakarta.jakartaee-api</artifactId>
-            <version>10.0.0</version>
+            <version>11.0.0-M1</version>
             <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>jakarta.data</groupId>
-            <artifactId>jakarta.data-api</artifactId>
-            <version>1.0.0-M2</version>
         </dependency>
     </dependencies>
 
@@ -51,7 +46,7 @@
                     <runtimeArtifact>
                         <groupId>io.openliberty.beta</groupId>
                         <artifactId>openliberty-runtime</artifactId>
-                        <version>23.0.0.12-beta</version>
+                        <version>24.0.0.2-beta</version>
                         <type>zip</type>
                     </runtimeArtifact>
                     <copyDependencies>
