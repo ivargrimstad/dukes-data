@@ -1,24 +1,25 @@
 <server description="Dukes Data Demo">
     <featureManager>
-        <feature>restfulWS-3.1</feature>
-        <feature>jsonb-3.0</feature>
-        <feature>cdi-4.0</feature>
-        <feature>persistence-3.1</feature>
-        <feature>data-1.0</feature>
+        <platform>jakartaee-11.0</platform>
+        <feature>restfulWS</feature>
+        <feature>jsonb</feature>
+        <feature>cdi</feature>
+        <feature>persistence</feature>
+        <feature>data</feature>
     </featureManager>
 
     <library id="jdbcLib">
         <fileset dir="jdbc" includes="*.jar"/>
     </library>
 
-    <dataSource  id="DukesDataSource">
+    <dataSource  id="DefaultDataSource">
         <jdbcDriver libraryRef="jdbcLib"/>
-        <properties serverName="localhost" portNumber="3306"
+        <properties serverName="localhost" portNumber="5432"
                     databaseName="dukes_data"
                     user="duke"
                     password="duke"/>
     </dataSource>
 
-    <databaseStore id="defaultDatabaseStore" createTables="true" dropTables="true"
-                   tablePrefix="" dataSourceRef="DukesDataSource"/>
+    <databaseStore id="defaultDatabaseStore" createTables="true" dropTables="false"
+                   tablePrefix="" dataSourceRef="DefaultDataSource"/>
 </server>
