@@ -1,0 +1,11 @@
+GET http://localhost:9080/dukes-data/api/greetings
+Accept: application/json, text/plain
+
+###
+POST http://localhost:9080/dukes-data/api/greetings
+Content-Type: application/json
+
+{
+  "message": "Hello from MrDuke",
+  "name": "Dukes"
+}
