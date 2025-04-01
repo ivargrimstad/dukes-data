@@ -4,6 +4,6 @@
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_2.xsd"
              version="3.2">
     <persistence-unit name="DukesData" transaction-type="JTA">
-        <jta-data-source>DukesDataSource</jta-data-source>
+        <jta-data-source>DefaultDataSource</jta-data-source>
     </persistence-unit>
 </persistence>
