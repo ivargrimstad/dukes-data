@@ -6,6 +6,6 @@ POST http://localhost:9080/dukes-data/api/greetings
 Content-Type: application/json
 
 {
-  "message": "Hello from JavaOne",
+  "message": "Hello GIDS 2025",
   "name": "Duke"
 }
