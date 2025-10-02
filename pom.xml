@@ -45,7 +45,7 @@
                     <runtimeArtifact>
                         <groupId>io.openliberty.beta</groupId>
                         <artifactId>openliberty-runtime</artifactId>
-                        <version>25.0.0.9-beta</version>
+                        <version>25.0.0.10-beta</version>
                         <type>zip</type>
                     </runtimeArtifact>
                     <copyDependencies>
